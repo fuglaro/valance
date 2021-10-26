@@ -4,13 +4,15 @@
 
 ### Examples
 
-#### User table
+#### *user* table
+
 | id | name | color |
 | -- | ---- | ----- |
 | 1  | John | red   |
 | 2  | Ken  | blue  |
 
 #### Basic row count query
+
 ```json
 {
     "table": "mytable",
@@ -21,15 +23,46 @@
 > ```
 
 #### Basic column query
+
 ```json
 {
-    "table": "mytable",
+    "table": "user",
     "columns": ["color", "name"]
 }
 ```
 > ```json
 > [
->     ["red", "John"],
->     ["blue", "Ken"]
+>     ["red", "John", ["user", 1]],
+>     ["blue", "Ken", ["user", 2]]
+> ]
+> ```
+
+#### Basic limited query
+
+```json
+{
+    "table": "mytable",
+    "columns": ["name"],
+    "limit": 1
+}
+```
+> ```json
+> [
+>     ["John", ["user", 1]]
+> ]
+> ```
+
+#### Basic offset query
+
+```json
+{
+    "table": "mytable",
+    "columns": ["name"],
+    "offset": 1
+}
+```
+> ```json
+> [
+>     ["Ken", ["user", 2]]
 > ]
 > ```
