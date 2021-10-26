@@ -20,9 +20,8 @@ Currently in research phase
 ## Tech Dependencies
 
 * DB: PostgreSQL
-* Backend language: Javascript
+* Primary coding language: Javascript
 * Backend framework: NodeJS
-* Frontend language: Javascript
 * Frontend framework: ReactJS
 * Frontend tableview: react-data-grid
 * Frontend gantt chart: dhtmlx-gantt (GPLv2)
