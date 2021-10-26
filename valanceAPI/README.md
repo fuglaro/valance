@@ -4,22 +4,32 @@
 
 ### Examples
 
-> #### User table
-> | id | name | color |
-> | -- | ---- | ----- |
-> | 1  | John | red   |
-> | 2  | Ken  | blue  |
+#### User table
+| id | name | color |
+| -- | ---- | ----- |
+| 1  | John | red   |
+| 2  | Ken  | blue  |
 
-> #### Basic query
+#### Basic row count query
+```json
+{
+    "table": "mytable",
+}
+```
 > ```json
-> {
->     "table": "mytable",
->     "columns": ["color", "name"]
-> }
+> 2
 > ```
->> ```json
->> [
->>     ["red", "John"],
->>     ["blue", "Ken"]
->> ]
->> ```
+
+#### Basic column query
+```json
+{
+    "table": "mytable",
+    "columns": ["color", "name"]
+}
+```
+> ```json
+> [
+>     ["red", "John"],
+>     ["blue", "Ken"]
+> ]
+> ```
