@@ -5,21 +5,22 @@ Currently in research phase
 
 ## UI Components
 
-Valance Tables - Customisable queries reported in a table, with search, relationship traversal, and calculated columns.
-Valance Browse - Entries as customisable pages with link navigation for relationships.
-Valance Cards - Entries as customisable display cards.
-Valance Gantts - Duration based data in Gantt charts.
-Valance Pages - Connect Valance components, and external webpages, together into saveable user interfaces.
-Valance Folders - Organise stored Valance Pages in Folders.
+* Valance Tables - Customisable queries reported in a table, with search, relationship traversal, and calculated columns.
+* Valance Browse - Entries as customisable pages with link navigation for relationships.
+* Valance Cards - Entries as customisable display cards.
+* Valance Gantts - Duration based data in Gantt charts.
+* Valance Pages - Connect Valance components, and external webpages, together into saveable user interfaces.
+* Valance Folders - Organise stored Valance Pages in Folders.
 
 ## Tech Components
 
 * DB: PostgreSQL
-* Backend language: Golang
+* Backend language: Javascript
+* Backend framework: NodeJS
 * Frontend language: Javascript
-* Frontend framework: 
-* Frontend tableview:
-* Frontend gantt chart:
+* Frontend framework: ReactJS
+* Frontend tableview: react-data-grid
+* Frontend gantt chart: dhtmlx-gantt
 
 ## Core Features
 
