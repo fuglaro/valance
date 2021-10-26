@@ -4,7 +4,7 @@
 
 ### Examples
 
-#### *user* table
+#### table: *user*
 
 | id | name | color |
 | -- | ---- | ----- |
