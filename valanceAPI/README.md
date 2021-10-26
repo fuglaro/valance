@@ -14,6 +14,6 @@
 > ```json
 > {
 >     "table": "mytable",
->     "columns": ["color", "name"]]
+>     "columns": ["color", "name"]
 > }
 > ```
