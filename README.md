@@ -1,5 +1,5 @@
 # Valance
-A thin customisable PostgreSQL web interface, tuned for business applications.
+A thin and flexible PostgreSQL web interface, designed for business applications.
 
 Currently in research phase
 
