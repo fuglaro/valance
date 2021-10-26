@@ -1,5 +1,5 @@
-# crewrangle
-Task tracking across mammoth volatile projects
+# Valance
+A thin PostgreSQL web interface, tuned for business applications.
 
 Currently in research phase
 
