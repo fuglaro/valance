@@ -17,3 +17,9 @@
 >     "columns": ["color", "name"]
 > }
 > ```
+>> ```json
+>> [
+>>     ["red", "John"],
+>>     ["blue", "Ken"]
+>> ]
+>> ```
