@@ -20,6 +20,7 @@ Currently in research phase
 ## Tech Dependencies
 
 * DB: PostgreSQL
+* DB API: node-postgres (see Row mode)
 * Primary coding language: Javascript
 * Backend framework: NodeJS
 * Frontend framework: ReactJS
