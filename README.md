@@ -14,6 +14,11 @@ Currently in research phase
 
 ## Tech Components
 
+* Web User Interface - Dynamically buildable and customisable with templates and supporting access to multiple databases.
+* RestAPI - Web API elegantly aligned to the data interface requirements of Valance Tables.
+
+## Tech Dependencies
+
 * DB: PostgreSQL
 * Backend language: Javascript
 * Backend framework: NodeJS
