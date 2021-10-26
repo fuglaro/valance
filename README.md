@@ -20,7 +20,7 @@ Currently in research phase
 * Frontend language: Javascript
 * Frontend framework: ReactJS
 * Frontend tableview: react-data-grid
-* Frontend gantt chart: dhtmlx-gantt
+* Frontend gantt chart: dhtmlx-gantt (GPLv2)
 
 ## Core Features
 
