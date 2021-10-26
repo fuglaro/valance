@@ -2,14 +2,16 @@
 
 ## Ideas (WIP)
 
-### Examples
+### Example Database
 
-#### table: *user*
+#### *user*
 
 | id | name | color |
 | -- | ---- | ----- |
 | 1  | John | red   |
 | 2  | Ken  | blue  |
+
+### Example Queries
 
 #### Basic row count query
 
