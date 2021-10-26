@@ -15,7 +15,7 @@ Currently in research phase
 ## Tech Components
 
 * Web User Interface - Dynamically buildable and customisable with templates.
-* RestAPI - Web API elegantly aligned to the data interface requirements of Valance Tables.
+* RestAPI - Web API elegantly aligned to the data interface requirements of Valance Tables. [Valance API](valanceAPI/Readme.md)
 
 ## Tech Dependencies
 
