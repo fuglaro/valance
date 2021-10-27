@@ -2,6 +2,7 @@
 
 ## Ideas (WIP)
 
+### relationship traversal andreverse traversal.
 pet
 
 owner.name
@@ -10,7 +11,32 @@ person
 
 pet:owner.breed
 
+### formulas
 
+```
++(, ...)
+-()
+*(, ...)
+/(,)
+>()
+<()
+>=()
+<=()
+EQ()
+NOT()
+OR(, ...)
+AND(, ...)
+
+```
+
+### result agregators
+
+```
+SUM[]
+MIN[]
+MAX[]
+
+```
 
 ### Example Database
 
