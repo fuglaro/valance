@@ -17,7 +17,7 @@
 
 ```json
 {
-    "table": "mytable",
+    "table": "user",
 }
 ```
 > ```json
@@ -43,7 +43,7 @@
 
 ```json
 {
-    "table": "mytable",
+    "table": "user",
     "columns": ["name"],
     "limit": 1
 }
@@ -58,7 +58,7 @@
 
 ```json
 {
-    "table": "mytable",
+    "table": "user",
     "columns": ["name"],
     "offset": 1
 }
