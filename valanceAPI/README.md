@@ -2,6 +2,16 @@
 
 ## Ideas (WIP)
 
+pet
+
+owner.name
+
+person
+
+pet:owner.breed
+
+
+
 ### Example Database
 
 #### *user*
