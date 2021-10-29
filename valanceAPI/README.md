@@ -4,10 +4,10 @@
 
 ### *user*
 
-| id | name | color |
-| -- | ---- | ----- |
-| 1  | John | red   |
-| 2  | Ken  | blue  |
+| *id* | name | color |
+| ---- | ---- | ----- |
+|   1  | John | red   |
+|   2  | Ken  | blue  |
 
 ## Example Queries
 
