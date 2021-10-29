@@ -152,7 +152,7 @@
 [[[["WIN", ["medal", 1]],
    ["LAST", ["medal", 2]]], ["user", [1]]],
  [[["WIN", ["medal", 1]],
-   ["HERO", ["achievement"]]], ["user", [2]]]]
+   ["HERO", ["achievement", 1]]], ["user", [2]]]]
 ```
 
 ## Ideas
