@@ -109,7 +109,7 @@
 ```
 ---
 
-## Relationship Examples
+## Advanced Examples
 
 *user*
 | *id* | name | color |
