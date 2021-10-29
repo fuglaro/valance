@@ -7,6 +7,7 @@
 | ---- | ---- | ----- |
 | 1    | John | red   |
 | 2    | Ken  | blue  |
+| 3    | Adam | blue  |
 
 ### Count
 
@@ -25,12 +26,13 @@
 ```json
 {
     "table": "user",
-    "columns": ["color", "name"]
+    "columns": "color|name"
 }
 ```
 ```json
 [["red", "John", ["user", [1]]],
- ["blue", "Ken", ["user", [2]]]]
+ ["blue", "Ken", ["user", [2]]],
+ ["blue", "Adam", ["user", [3]]]]
 ```
 ---
 
@@ -39,7 +41,7 @@
 ```json
 {
     "table": "user",
-    "columns": ["name"],
+    "columns": "name",
     "limit": 1
 }
 ```
@@ -53,12 +55,13 @@
 ```json
 {
     "table": "user",
-    "columns": ["name"],
+    "columns": "name",
     "offset": 1
 }
 ```
 ```json
-[["Ken", ["user", [2]]]]
+[["Ken", ["user", [2]]],
+ ["Adam", ["user", [3]]]]
 ```
 ---
 
@@ -67,25 +70,27 @@
 ```json
 {
     "table": "user",
-    "columns": ["name"],
-    "sort": ["color"]
+    "columns": "name",
+    "sort": "color"
 }
 ```
 ```json
 [["Ken", ["user", [2]]],
+ ["Adam", ["user", [3]],
  ["John", ["user", [1]]]]
 ```
 ---
 ```json
 {
     "table": "user",
-    "columns": ["name"],
-    "sort": ["^color"]
+    "columns": "name|color",
+    "sort": "^color|name"
 }
 ```
 ```json
-[["John", ["user", [1]]],
- ["Ken", ["user", [2]]]]
+[["John", "red", ["user", [1]]],
+ ["Adam", "blue", ["user", [3]]
+ ["Ken", "blue", ["user", [2]]]]
 ```
 ---
 
@@ -94,12 +99,13 @@
 ```json
 {
     "table": "user",
-    "columns": ["name"],
+    "columns": "name",
     "where": "EQ(color,'blue')"
 }
 ```
 ```json
-[["Ken", ["user", [2]]]]
+[["Ken", ["user", [2]]],
+ ["Adam", ["user", [3]]]
 ```
 ---
 
@@ -118,11 +124,11 @@
 | 2    | LAST | red   |
 ---
 *achievements*
-| *pk* | user | medal | count |
-| ---- | ---- | ----- | ----- |
-|   1  | 1    | 1     | 1     |
-|   3  | 1    | 2     | 2     |
-|   2  | 2    | 1     | 5     |
+| *pk* | user> | medal> | count |
+| ---- | ----- | ------ | ----- |
+|   1  | 1     | 1      | 1     |
+|   3  | 1     | 2      | 2     |
+|   2  | 2     | 1      | 5     |
 
 
 ## Ideas
