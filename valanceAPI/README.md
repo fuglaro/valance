@@ -1,15 +1,12 @@
 # Valance API
 
-## Example Database
+## Basic Examples
 
-### *user*
-
+*user*
 | *id* | name | color |
 | ---- | ---- | ----- |
-|   1  | John | red   |
-|   2  | Ken  | blue  |
-
-## Example Queries
+| 1    | John | red   |
+| 2    | Ken  | blue  |
 
 ### Count
 
@@ -21,6 +18,7 @@
 ```json
 2
 ```
+---
 
 ### Columns
 
@@ -34,6 +32,7 @@
 [["red", "John", ["user", [1]]],
  ["blue", "Ken", ["user", [2]]]]
 ```
+---
 
 ### Limit
 
@@ -47,6 +46,7 @@
 ```json
 [["John", ["user", [1]]]]
 ```
+---
 
 ### Offset
 
@@ -60,6 +60,7 @@
 ```json
 [["Ken", ["user", [2]]]]
 ```
+---
 
 ### Sort
 
@@ -86,6 +87,7 @@
 [["John", ["user", [1]]],
  ["Ken", ["user", [2]]]]
 ```
+---
 
 ### Where Filter
 
@@ -99,6 +101,23 @@
 ```json
 [["Ken", ["user", [2]]]]
 ```
+---
+
+## Relationship Examples
+
+*user*
+| *id* | name | color |
+| ---- | ---- | ----- |
+| 1    | John | red   |
+| 2    | Ken  | blue  |
+---
+*achievements*
+| *pk* | userid | medal | count |
+| ---- | ------ | ----- | ----- |
+|   1  | 1      | gold  | 1     |
+|   2  | 2      | gold  | 5     |
+|   3  | 2      | pile  | 1     |
+
 
 ## Ideas
 
