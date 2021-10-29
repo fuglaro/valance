@@ -88,7 +88,27 @@
 ]
 ```
 
+### Where Filter
+
+```json
+{
+    "table": "user",
+    "columns": ["name"],
+    "where": "EQ(color,'blue')"
+}
+```
+---
+```json
+[
+    ["Ken", ["user", 2]]
+]
+```
+
 ## Ideas
+
+### Sorting
+
+
 
 ### relationship traversal andr everse traversal.
 pet
