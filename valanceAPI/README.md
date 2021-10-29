@@ -50,7 +50,7 @@ MAX[]
 
 ```json
 {
-    "table": "user",
+    "table": "user"
 }
 ```
 > ```json
