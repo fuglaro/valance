@@ -123,13 +123,22 @@
 | 1    | WIN  | gold  |
 | 2    | LAST | red   |
 ---
-*achievements*
-| *pk* | user> | medal> | count |
-| ---- | ----- | ------ | ----- |
-|   1  | 1     | 1      | 1     |
-|   3  | 1     | 2      | 2     |
-|   2  | 2     | 1      | 5     |
-
+*user_medal*
+| *user*> | *medal*> | count |
+| ------- | -------- | ----- |
+| 1       | 1        | 1     |
+| 1       | 2        | 2     |
+| 2       | 1        | 5     |
+---
+*achievement*
+| *id* | name |
+| ---- | ---- |
+| 1    | HERO |
+---
+*user_achievement*
+| *user*> | *achievement*> |
+| ------- | -------------- |
+| 2       | 1              |
 
 ## Ideas
 
