@@ -84,7 +84,7 @@
 {
     "table": "user",
     "columns": "name|color",
-    "sort": "^color|name"
+    "sort": "^color,name"
 }
 ```
 ```json
