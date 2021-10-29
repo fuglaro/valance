@@ -18,9 +18,10 @@
     "table": "user"
 }
 ```
-> ```json
-> 2
-> ```
+---
+```json
+2
+```
 
 ### Columns
 
@@ -30,12 +31,13 @@
     "columns": ["color", "name"]
 }
 ```
-> ```json
-> [
->     ["red", "John", ["user", 1]],
->     ["blue", "Ken", ["user", 2]]
-> ]
-> ```
+---
+```json
+[
+    ["red", "John", ["user", 1]],
+    ["blue", "Ken", ["user", 2]]
+]
+```
 
 ### Limit
 
@@ -46,11 +48,12 @@
     "limit": 1
 }
 ```
-> ```json
-> [
->     ["John", ["user", 1]]
-> ]
-> ```
+---
+```json
+[
+    ["John", ["user", 1]]
+]
+```
 
 ### Offset
 
@@ -61,11 +64,12 @@
     "offset": 1
 }
 ```
-> ```json
-> [
->     ["Ken", ["user", 2]]
-> ]
-> ```
+---
+```json
+[
+    ["Ken", ["user", 2]]
+]
+```
 
 ### Sort
 
@@ -76,12 +80,13 @@
     "sort": ["color"]
 }
 ```
-> ```json
-> [
->     ["Ken", ["user", 2]],
->     ["John", ["user", 1]]
-> ]
-> ```
+--
+```json
+[
+    ["Ken", ["user", 2]],
+    ["John", ["user", 1]]
+]
+```
 
 ## Ideas
 
