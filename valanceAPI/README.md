@@ -108,6 +108,7 @@
 
 ### Sorting
 
+"sort": ["^color"]
 
 
 ### relationship traversal andr everse traversal.
