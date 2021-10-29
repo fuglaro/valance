@@ -31,8 +31,8 @@
 }
 ```
 ```json
-[["red", "John", ["user", 1]],
- ["blue", "Ken", ["user", 2]]]
+[["red", "John", ["user", [1]]],
+ ["blue", "Ken", ["user", [2]]]]
 ```
 
 ### Limit
@@ -45,7 +45,7 @@
 }
 ```
 ```json
-[["John", ["user", 1]]]
+[["John", ["user", [1]]]]
 ```
 
 ### Offset
@@ -58,7 +58,7 @@
 }
 ```
 ```json
-[["Ken", ["user", 2]]]
+[["Ken", ["user", [2]]]]
 ```
 
 ### Sort
@@ -71,8 +71,8 @@
 }
 ```
 ```json
-[["Ken", ["user", 2]],
- ["John", ["user", 1]]]
+[["Ken", ["user", [2]]],
+ ["John", ["user", [1]]]]
 ```
 
 ### Where Filter
@@ -85,7 +85,7 @@
 }
 ```
 ```json
-[["Ken", ["user", 2]]]
+[["Ken", ["user", [2]]]]
 ```
 
 ## Ideas
