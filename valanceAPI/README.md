@@ -74,6 +74,17 @@
 [["Ken", ["user", [2]]],
  ["John", ["user", [1]]]]
 ```
+```json
+{
+    "table": "user",
+    "columns": ["name"],
+    "sort": ["^color"]
+}
+```
+```json
+[["John", ["user", [1]]],
+ ["Ken", ["user", [2]]]]
+```
 
 ### Where Filter
 
