@@ -30,6 +30,7 @@ AND(, ...)
 
 ```
 SUM[]
+COUNT[]
 MIN[]
 MAX[]
 ```
@@ -45,7 +46,7 @@ MAX[]
 
 ### Example Queries
 
-#### Basic row count query
+#### Count
 
 ```json
 {
@@ -56,7 +57,7 @@ MAX[]
 > 2
 > ```
 
-#### Basic column query
+#### Columns
 
 ```json
 {
@@ -71,7 +72,7 @@ MAX[]
 > ]
 > ```
 
-#### Basic limited query
+#### Limit
 
 ```json
 {
@@ -86,7 +87,7 @@ MAX[]
 > ]
 > ```
 
-#### Basic offset query
+#### Offset
 
 ```json
 {
@@ -98,5 +99,21 @@ MAX[]
 > ```json
 > [
 >     ["Ken", ["user", 2]]
+> ]
+> ```
+
+#### Sort
+
+```json
+{
+    "table": "user",
+    "columns": ["name"],
+    "sort": ["color"]
+}
+```
+> ```json
+> [
+>     ["Ken", ["user", 2]],
+>     ["John", ["user", 1]]
 > ]
 > ```
