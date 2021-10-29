@@ -18,15 +18,12 @@ pet:owner.breed
 -()
 *(, ...)
 /(,)
->()
-<()
->=()
-<=()
+>(,)
+<(,)
 EQ()
 NOT()
 OR(, ...)
 AND(, ...)
-
 ```
 
 ### result agregators
@@ -35,7 +32,6 @@ AND(, ...)
 SUM[]
 MIN[]
 MAX[]
-
 ```
 
 ### Example Database
