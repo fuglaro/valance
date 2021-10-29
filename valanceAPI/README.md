@@ -112,12 +112,11 @@
 | 2    | Ken  | blue  |
 ---
 *achievements*
-| *pk* | userid | medal | count |
-| ---- | ------ | ----- | ----- |
-|   1  | 1      | gold  | 1     |
-|   2  | 2      | gold  | 5     |
-|   3  | 2      | pile  | 1     |
-
+| *pk* | user | medal | count |
+| ---- | ---- | ----- | ----- |
+|   1  | 1    | gold  | 1     |
+|   2  | 2    | gold  | 5     |
+|   3  | 2    | pile  | 1     |
 
 ## Ideas
 
