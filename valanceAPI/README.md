@@ -140,6 +140,21 @@
 | ------- | -------------- |
 | 2       | 1              |
 
+### Diverging Relationships
+
+```json
+{
+    "table": "user",
+    "columns": "{user_medal:user.medal,user_achievement:user.achievement}.name"
+}
+```
+```json
+[[[["WIN", ["medal", 1]],
+   ["LAST", ["medal", 2]]], ["user", [1]]],
+ [[["WIN", ["medal", 1]],
+   ["HERO", ["achievement"]]], ["user", [2]]]]
+```
+
 ## Ideas
 
 ### Sorting
