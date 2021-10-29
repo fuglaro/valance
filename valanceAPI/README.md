@@ -111,12 +111,19 @@
 | 1    | John | red   |
 | 2    | Ken  | blue  |
 ---
+*medal*
+| *id* | name | color |
+| ---- | ---- | ----- |
+| 1    | WIN  | gold  |
+| 2    | LAST | red   |
+---
 *achievements*
 | *pk* | user | medal | count |
 | ---- | ---- | ----- | ----- |
-|   1  | 1    | gold  | 1     |
-|   2  | 2    | gold  | 5     |
-|   3  | 2    | pile  | 1     |
+|   1  | 1    | 1     | 1     |
+|   3  | 1    | 2     | 2     |
+|   2  | 2    | 1     | 5     |
+
 
 ## Ideas
 
