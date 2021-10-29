@@ -74,6 +74,7 @@
 [["Ken", ["user", [2]]],
  ["John", ["user", [1]]]]
 ```
+---
 ```json
 {
     "table": "user",
