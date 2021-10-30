@@ -141,6 +141,20 @@
 | ------- | -------------- |
 | 2       | 1              |
 
+### Relationship Traversal
+
+```json
+{
+    "table": "user_medal",
+    "columns": "user.name|medal.name|medal.color"
+}
+```
+```json
+[["John", "WIN", "gold", ["user_medal", [1, 1]]],
+ ["John", "LAST", "red", ["user_medal", [1, 2]]],
+ ["Ken", "WIN", "gold", ["user_medal", [2, 1]]]]
+```
+
 ### Branching Relationships
 
 ```json
@@ -159,7 +173,13 @@
 
 ## Ideas
 
-Labels in queries
+Labels with queries (decorated queries for easy storing)
+```json
+{
+    "query": 
+}
+```
+
 
 
 ### relationship traversal andr everse traversal.
