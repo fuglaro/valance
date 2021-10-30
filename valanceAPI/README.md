@@ -141,7 +141,7 @@
 | ------- | -------------- |
 | 2       | 1              |
 
-### Diverging Relationships
+### Branching Relationships
 
 ```json
 {
