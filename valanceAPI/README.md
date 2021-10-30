@@ -89,7 +89,7 @@
 ```
 ```json
 [["John", "red", ["user", [1]]],
- ["Adam", "blue", ["user", [3]]
+ ["Adam", "blue", ["user", [3]],
  ["Ken", "blue", ["user", [2]]]]
 ```
 ---
@@ -171,14 +171,33 @@
  [[], ["user", [3]]]]
 ```
 
-## Ideas
-
-Labels with queries (decorated queries for easy storing)
+### Addition Metadata
 ```json
 {
-    "query": 
+    "table": "user",
+    "columns": "user|SUM[IF(EQ(user_medal:user.medal.name,"WIN"),user_medal:user.count,0)]",
+    "name": "Scoreboard",
+    "info": "The results of all players",
+    "column_names": "|Score",
+    "column_info": "|The player's win count"
 }
 ```
+```json
+[["John", 1, ["user", [1]]],
+ ["Adam", 5, ["user", [3]],
+ ["Ken", 0, ["user", [2]]]]
+```
+*name*, *info*, *column_names* and *column_info*, are ignored by the API itself. They are used by the UI components.
+
+
+## Ideas
+
+
+### decoration, view, and extra behaviour features
+
+* Default conversion from database table and column names to labels.
+* Labels for tables and columns.
+* Tooltips for tables and columns.
 
 
 
@@ -204,6 +223,7 @@ EQ()
 NOT()
 OR(, ...)
 AND(, ...)
+IF(,,)
 ```
 
 ### result agregators
