@@ -159,9 +159,7 @@
 
 ## Ideas
 
-### Sorting
-
-"sort": ["^color"]
+Labels in queries
 
 
 ### relationship traversal andr everse traversal.
