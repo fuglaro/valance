@@ -116,6 +116,7 @@
 | ---- | ---- | ----- |
 | 1    | John | red   |
 | 2    | Ken  | blue  |
+| 3    | Adam | blue  |
 ---
 *medal*
 | *id* | name | color |
@@ -152,7 +153,8 @@
 [[[["WIN", ["medal", 1]],
    ["LAST", ["medal", 2]]], ["user", [1]]],
  [[["WIN", ["medal", 1]],
-   ["HERO", ["achievement", 1]]], ["user", [2]]]]
+   ["HERO", ["achievement", 1]]], ["user", [2]]],
+ [[], ["user", [3]]]]
 ```
 
 ## Ideas
