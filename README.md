@@ -65,7 +65,6 @@ Default actions include:
 Additional actions can include:
 * Creating a new row in another table linked by a relationship (if permitted).
 * Open a link passing in the database, the selected row identies, and an authentication token (time limited JWT) that can be placed back to perform further queries.
-* 
 
 Actions have:
 * Icon
