@@ -5,7 +5,7 @@ The mission of Valance is to reskin PostgreSQL to be easy for technical spreadsh
 
 PostregSQL is an incredibly powerful and flexible database system, albeit a little daunting for everyone to try to learn.
 Valance will never try to reinvent the wheel and will either provide intuitive interfaces, or easy to follow guides, to existing PostgreSQL features. 
-When a database scales in terms of size or complexity, it will be beneficial to enlist, or build the skills of a database engineer, but this will be a natural transition, rather than a whole new development effort, that can sometimes be required when a spreadsheet is pushed to its limits 
+When a database scales in terms of size or complexity, it will be beneficial to enlist, or build the skills of a database engineer, but this will be a natural transition, rather than a whole new development effort, that can sometimes be required when a spreadsheet is pushed to its limits.
 
 Currently in research phase.
 
