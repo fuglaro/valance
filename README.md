@@ -23,7 +23,18 @@ XXX - Clean up everything below this line
 
 ## Guides
 
-XXX 
+### Authentication
+
+* For an exposed web service (XXX OAuth2 external service with encrypted JWTs - webserver to db via PostgreSQL trusted authentication).
+* In a secure corporate network (XXX PostgreSQL LDAP authentication with encrypted JWTs - note exposed web service setup can also be used).
+* For personal use on the same host (XXX PostgreSQL SSPI or Peer authentication.
+
+### Authorisation (Access Restrictions)
+
+* Restricting access to tables and columns (XXX just move columns into a restricted table that can join).
+* Dividing your data into different access groups such as only allowing visibility to assigned tasks or controlling visibility on projects (XXX row level security associated with ids that divide up data across a collection of tables).
+
+### Change loggin.
 
 ## Tech Components
 
@@ -42,8 +53,6 @@ XXX
 
 ## Core Features
 
-* Authentication
-* Authorization
 * Database forking and sharing
 
 
