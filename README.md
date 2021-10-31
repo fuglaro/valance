@@ -36,7 +36,7 @@ XXX - Clean up everything below this line
 
 ### Change logging
 
-* Add a standard change history table with event triggers.
+* Add a standard change history table (XXX with event triggers).
 
 ## Tech Components
 
