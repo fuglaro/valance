@@ -49,7 +49,26 @@ XXX
 
 ## Ideas:
 
-Users
+### Users
 - Shareable Components, Pages and Folders have role or user owners.
 - Each user has their own Private Folder area where contents are shareable.
 - Users can login with any of their assigned roles.
+
+### Actions
+
+Every table can have a list of actions defined that will be available to run in the UI for selected rows.
+These are global for all users but may require permissions in the underlying database.
+Default actions include:
+* Creating a new row (if permitted).
+* Deleting a row (if permitted).
+Additional actions can include:
+* Creating a new row in another table linked by a relationship (if permitted).
+* Creating new rows in associated
+
+Actions have:
+* Icon
+* Name
+* Description
+
+### Schema chances
+
