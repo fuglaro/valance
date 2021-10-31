@@ -34,7 +34,7 @@ XXX - Clean up everything below this line
 * Restricting access to tables and columns (XXX just move columns into a restricted table that can join).
 * Dividing your data into different access groups such as only allowing visibility to assigned tasks or controlling visibility on projects (XXX row level security associated with ids that divide up data across a collection of tables).
 
-### Change loggin.
+### Change logging
 
 ## Tech Components
 
