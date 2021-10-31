@@ -83,5 +83,5 @@ Actions have:
 
 Actions are stored in a *_valance_actions* table and admin permissions are managed on that table.
 
-### Schema chances
-
+### Schema changes
+How does one?
