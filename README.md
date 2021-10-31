@@ -36,6 +36,8 @@ XXX - Clean up everything below this line
 
 ### Change logging
 
+* Add a standard change history table with event triggers.
+
 ## Tech Components
 
 * Web User Interface - Dynamically buildable and customisable with templates.
