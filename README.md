@@ -1,7 +1,15 @@
 # Valance
-A thin and flexible PostgreSQL web interface, designed for business applications.
+A thin and flexible PostgreSQL web interface, designed for business applications, with interfaces familiar to spreadsheet users.
 
-Currently in research phase
+The mission of Valance is to reskin PostgreSQL to be easy for technical spreadsheet users to create and configure, while providing a highly customisable and sleek web interface for non-technical users.
+
+PostregSQL is an incredibly powerful and flexible database system, albeit a little daunting for everyone to try to learn.
+Valance will never try to reinvent the wheel and will either provide intuitive interfaces, or easy to follow guides, to existing PostgreSQL features. 
+When a database scales in terms of size or complexity, it will be beneficial to enlist, or build the skills of a database engineer, but this will be a natural transition, rather than a whole new development effort, that can sometimes be required when a spreadsheet is pushed to its limits 
+
+Currently in research phase.
+
+
 
 ## UI Components
 
