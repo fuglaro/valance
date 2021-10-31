@@ -61,14 +61,19 @@ These are global for all users but may require permissions in the underlying dat
 Default actions include:
 * Creating a new row (if permitted).
 * Deleting a row (if permitted).
+
 Additional actions can include:
 * Creating a new row in another table linked by a relationship (if permitted).
-* Creating new rows in associated
+* Open a link passing in the database, the selected row identies, and an authentication token (time limited JWT) that can be placed back to perform further queries.
+* 
 
 Actions have:
 * Icon
 * Name
 * Description
+* Authentication token validity duration.
+
+Actions are stored in a *_valance_actions* table and admin permissions are managed on that table.
 
 ### Schema chances
 
