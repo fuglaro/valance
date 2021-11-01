@@ -80,6 +80,8 @@
  ["John", ["user", [1]]]]
 ```
 ---
+
+#### Sorting on multiple columns
 ```json
 {
     "table": "user",
@@ -154,8 +156,42 @@
  ["John", "LAST", "red", ["user_medal", [1, 2]]],
  ["Ken", "WIN", "gold", ["user_medal", [2, 1]]]]
 ```
+---
 
-### Branching Relationships
+#### Reverse Relationship Traversal
+
+```json
+{
+    "table": "user",
+    "columns": "user_medal:user.count"
+
+}
+```
+```json
+[[[[1, ["medal", 1]],
+   [2, ["medal", 2]]], ["user", [1]]],
+ [[[3, ["medal", 1]]], ["user", [2]]],
+ [[], ["user", [3]]]]
+```
+---
+
+#### Deep Relationship Traversal
+
+```json
+{
+    "table": "user",
+    "columns": "user_medal:user.medal.color"
+}
+```
+```json
+[[[["gold", ["medal", 1]],
+   ["red", ["medal", 2]]], ["user", [1]]],
+ [[["gold", ["medal", 1]]], ["user", [2]]],
+ [[], ["user", [3]]]]
+```
+---
+
+#### Branching Relationships
 
 ```json
 {
@@ -170,6 +206,7 @@
    ["HERO", ["achievement", 1]]], ["user", [2]]],
  [[], ["user", [3]]]]
 ```
+---
 
 ### Addition Metadata
 ```json
@@ -187,6 +224,7 @@
  ["Adam", 5, ["user", [3]],
  ["Ken", 0, ["user", [2]]]]
 ```
+---
 *name*, *info*, *column_names* and *column_info*, are ignored by the API itself. They are used by the UI components.
 
 
