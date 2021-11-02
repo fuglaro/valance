@@ -208,15 +208,11 @@
 ```
 ---
 
-### Addition Display Metadata
+### Column Labels
 ```json
 {
     "table": "user",
-    "columns": "user|SUM[IF(EQ(user_medal:user.medal.name,"WIN"),user_medal:user.count,0)]",
-    "name": "Scoreboard",
-    "info": "The results of all players",
-    "column_names": "|Score",
-    "column_info": "|The player's win count"
+    "columns": "user|(Score)SUM[IF(EQ(user_medal:user.medal.name,"WIN"),user_medal:user.count,0)]",
 }
 ```
 ```json
@@ -225,18 +221,17 @@
  ["Ken", 0, ["user", [2]]]]
 ```
 ---
-*name*, *info*, *column_names* and *column_info*, are ignored by the API itself.
-They are used by the UI components.
-*name* and *column_names* are optional and, where omitted, will fall back to table level customisations, or be automatically formatted from the table and column names in the database.
-The formatting follows these conversions: `table_name` -> `Table Name` and `column_name` -> `column name`.
-*info* and *column_info* are typically used for things like tooltips.
+Column Labels, exemplified above with `(Score)`, are purely decorative to the API, but can be used by UI elements. These are especially useful with formulas or complex relationship chains.
 
 ## Ideas
 
+Labeled relationships
+Labelled formulas
 
 ### decoration, view, and extra behaviour features
 
-* _valance_display_metadata_table
+XXX
+* _valance_table_metadata
 
 | *id* | table | name | info | hide |
 | ---- | ----- | ---- | ---- | ---- |
