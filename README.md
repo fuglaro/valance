@@ -83,7 +83,7 @@ Actions have:
 * Description
 * Authentication token validity duration.
 
-Actions are stored in a *_valance_actions* table and admin permissions are managed on that table.
+Actions are stored in a *_valance_action* table and admin permissions are managed on that table.
 
 ### Schema changes
 How does one?
