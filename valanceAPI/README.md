@@ -208,7 +208,7 @@
 ```
 ---
 
-### Addition Metadata
+### Addition Display Metadata
 ```json
 {
     "table": "user",
@@ -225,28 +225,27 @@
  ["Ken", 0, ["user", [2]]]]
 ```
 ---
-*name*, *info*, *column_names* and *column_info*, are ignored by the API itself. They are used by the UI components.
-
+*name*, *info*, *column_names* and *column_info*, are ignored by the API itself.
+They are used by the UI components.
+*name* and *column_names* are optional and, where omitted, will fall back to table level customisations, or be automatically formatted from the table and column names in the database.
+The formatting follows these conversions: `table_name` -> `Table Name` and `column_name` -> `column name`.
+*info* and *column_info* are typically used for things like tooltips.
 
 ## Ideas
 
 
 ### decoration, view, and extra behaviour features
 
-* Default conversion from database table and column names to labels.
-* Labels for tables and columns.
-* Tooltips for tables and columns.
+* _valance_display_metadata_table
+ * "table|name|info|hide"
+* _valance_display_metadata_column
+ * "table|column|name|info|hide"
+
+* _valance_labelled_relationship
+ * "table|label|relationship"
 
 
 
-### relationship traversal andr everse traversal.
-pet
-
-owner.name
-
-person
-
-pet:owner.breed
 
 ### formulas
 
