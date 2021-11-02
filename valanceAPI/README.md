@@ -212,7 +212,7 @@
 ```json
 {
     "table": "user",
-    "columns": "user|(Score)SUM[IF(EQ(user_medal:user.medal.name,"WIN"),user_medal:user.count,0)]",
+    "columns": "user|(Score)SUM[IF(EQ(user_medal:user.medal.name,'WIN'),user_medal:user.count,0)]",
 }
 ```
 ```json
