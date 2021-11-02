@@ -237,12 +237,19 @@ The formatting follows these conversions: `table_name` -> `Table Name` and `colu
 ### decoration, view, and extra behaviour features
 
 * _valance_display_metadata_table
- * "table|name|info|hide"
+
+| *id* | table | name | info | hide |
+| ---- | ----- | ---- | ---- | ---- |
+
 * _valance_display_metadata_column
- * "table|column|name|info|hide"
+
+| *id* | table | column | name | info | hide |
+| ---- | ----- | ------ | ---- | ---- | ---- |
 
 * _valance_labelled_relationship
- * "table|label|relationship"
+
+| *id* | table | label | relationship |
+| ---- | ----- | ----- | ------------ |
 
 
 
