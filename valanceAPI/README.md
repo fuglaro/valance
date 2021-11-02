@@ -1,6 +1,8 @@
 # Valance API
 
-## Basic Examples
+## Table Query API
+
+Endpoint: `db/<db-name>/query`
 
 *user*
 | *id* | name | color |
@@ -82,6 +84,7 @@
 ---
 
 #### Sorting on multiple columns
+
 ```json
 {
     "table": "user",
@@ -209,6 +212,7 @@
 ---
 
 ### Column Labels
+
 ```json
 {
     "table": "user",
@@ -223,28 +227,22 @@
 ---
 Column Labels, exemplified above with `(Score)`, are purely decorative to the API, but can be used by UI elements. These are especially useful with formulas or complex relationship chains.
 
+### Formulas
+
 ## Ideas
 
-Labeled relationships
-Labelled formulas
-
-### decoration, view, and extra behaviour features
+### Schema
 
 XXX
-* _valance_table_metadata
 
-| *id* | table | name | info | hide |
-| ---- | ----- | ---- | ---- | ---- |
 
-* _valance_display_metadata_column
+Labeled relationships
 
-| *id* | table | column | name | info | hide |
-| ---- | ----- | ------ | ---- | ---- | ---- |
+Labelled formulas
 
-* _valance_labelled_relationship
-
-| *id* | table | label | relationship |
-| ---- | ----- | ----- | ------------ |
+*_valance_column_label*
+| *id* | table | label | column |
+| ---- | ----- | ----- | ------ |
 
 
 
