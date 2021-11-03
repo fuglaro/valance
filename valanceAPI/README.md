@@ -67,7 +67,7 @@ Endpoint: `db/<db-name>/query`
 ```
 ---
 
-### Sort
+### Sort Conditions
 
 ```json
 {
@@ -147,6 +147,8 @@ Endpoint: `db/<db-name>/query`
 | 2       | 1              |
 
 ### Relationship Traversal
+
+Relationship traversal can be utilised in `columns`, `sort` conditions, and `where` filters.
 
 ```json
 {
@@ -229,6 +231,32 @@ Column Labels, exemplified above with `(Score)`, are purely decorative to the AP
 
 ### Formulas
 
+```
++(, ...)
+-()
+*(, ...)
+/(,)
+>(,)
+<(,)
+EQ()
+NOT()
+OR(, ...)
+AND(, ...)
+IF(,,)
+CONTAINS(,)
+LIKE(,)
+ILIKE(,)
+```
+
+### Result Aggregators
+
+```
+SUM[]
+COUNT[]
+MIN[]
+MAX[]
+```
+
 ## Ideas
 
 ### Schema
@@ -247,27 +275,5 @@ Labelled formulas
 
 
 
-### formulas
 
-```
-+(, ...)
--()
-*(, ...)
-/(,)
->(,)
-<(,)
-EQ()
-NOT()
-OR(, ...)
-AND(, ...)
-IF(,,)
-```
 
-### result agregators
-
-```
-SUM[]
-COUNT[]
-MIN[]
-MAX[]
-```
