@@ -264,6 +264,8 @@ MAX[]
 XXX
 
 Different folders having scheme variations such as column labels, column values, etc.
+Maybe allowing overrides!
+
 
 Labeled relationships
 
