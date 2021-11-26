@@ -255,6 +255,7 @@ SUM[]
 COUNT[]
 MIN[]
 MAX[]
+FIRST[]
 ```
 
 ## Ideas
