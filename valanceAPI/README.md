@@ -263,7 +263,7 @@ FIRST[]
 
 ## Ideas
 
-XXX TODO return values as ordered dicts with column or label as key. Good for label feature, good for expanding in UIs, good for internal algorithm.
+XXX TODO return values as ordered dicts with column or label as key. Good for label feature, good for expanding in UIs, good for internal algorithm. Actually just return labels in the top row. Clean. Cool. Crisp
 
 ### Schema
 
