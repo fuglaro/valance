@@ -32,19 +32,21 @@ Endpoint: `db/<db-name>/que,ry`
 }
 ```
 ```json
-{"labels": ["color", "name"],
- "values": [["red", "John"],
-            ["blue", "Ken"],
-            ["blue", "Adam"]],
- "rowrefs": [["user", {"id":1}],
-             ["user", {"id":2}],
-             ["user", {"id":3}]],
- "colrefs": [[null, null],
-             [null, null],
-             [null, null]],
- "columns": ["color", "name"],
- "backrefs": [null, null],
- "ismany": [0, 0]}
+{
+    "labels": ["color", "name"],
+    "values": [["red", "John"],
+               ["blue", "Ken"],
+               ["blue", "Adam"]],
+    "rowrefs": [["user", {"id":1}],
+                ["user", {"id":2}],
+                ["user", {"id":3}]],
+    "colrefs": [[null, null],
+                [null, null],
+                [null, null]],
+    "columns": ["color", "name"],
+    "backrefs": [null, null],
+    "ismany": [0, 0]
+}
 ```
 # XXX when is a colref editable?
 ---
