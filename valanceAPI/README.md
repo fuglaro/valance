@@ -37,18 +37,16 @@ Endpoint: `db/<db-name>/que,ry`
     "values": [["red", "John"],
                ["blue", "Ken"],
                ["blue", "Adam"]],
-    "rowrefs": [["user", {"id":1}],
-                ["user", {"id":2}],
-                ["user", {"id":3}]],
-    "colrefs": [[null, null],
-                [null, null],
-                [null, null]],
-    "columns": ["color", "name"],
-    "backrefs": [null, null],
+    "rowrefs": [{"id":1},
+                {"id":2},
+                {"id":3}],
+    "colrefs": [[["user", "color", {"id":1}], ["user", "name", {"id":1}]],
+                [["user", "color", {"id":2}], ["user", "name", {"id":2}]],
+                [["user", "color", {"id":3}], ["user", "name", {"id":3}]]],
+    "backrefs": ["", ""],
     "ismany": [0, 0]
 }
 ```
-# XXX when is a colref editable?
 ---
 
 ### Limit
