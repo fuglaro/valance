@@ -2,7 +2,7 @@
 
 ## Table Query API
 
-Endpoint: `db/<db-name>/que,ry`
+Endpoint: `db/<db-name>/query`
 
 *user*
 | *id* | name | color |
@@ -43,7 +43,6 @@ Endpoint: `db/<db-name>/que,ry`
     "colrefs": [[["user", "color", {"id":1}], ["user", "name", {"id":1}]],
                 [["user", "color", {"id":2}], ["user", "name", {"id":2}]],
                 [["user", "color", {"id":3}], ["user", "name", {"id":3}]]],
-    "backrefs": ["", ""],
     "ismany": [0, 0]
 }
 ```
@@ -59,8 +58,15 @@ Endpoint: `db/<db-name>/que,ry`
 }
 ```
 ```json
-[["John", ["user", [1]]]]
+{
+    "labels": ["name"],
+    "values": [["John"]],
+    "rowrefs": [{"id":1}],
+    "colrefs": [[["user", "name", {"id":1}]]],
+    "ismany": [0]
+}
 ```
+# XXX UPDATE REST
 ---
 
 ### Offset
@@ -73,8 +79,16 @@ Endpoint: `db/<db-name>/que,ry`
 }
 ```
 ```json
-[["Ken", ["user", [2]]],
- ["Adam", ["user", [3]]]]
+{
+    "labels": ["name"],
+    "values": [["Ken"],
+               ["Adam"]],
+    "rowrefs": [{"id":2},
+                {"id":3}],
+    "colrefs": [[["user", "name", {"id":2}]],
+                [["user", "name", {"id":3}]]],
+    "ismany": [0]
+}
 ```
 ---
 
@@ -88,9 +102,19 @@ Endpoint: `db/<db-name>/que,ry`
 }
 ```
 ```json
-[["Ken", ["user", [2]]],
- ["Adam", ["user", [3]],
- ["John", ["user", [1]]]]
+{
+    "labels": ["name"],
+    "values": [["Ken"],
+               ["Adam"],
+               ["John"]],
+    "rowrefs": [{"id":2},
+                {"id":3},
+                {"id":1}],
+    "colrefs": [[["user", "name", {"id":2}]],
+                [["user", "name", {"id":3}]],
+                [["user", "name", {"id":1}]]],
+    "ismany": [0]
+}
 ```
 ---
 
@@ -277,6 +301,8 @@ FIRST[]
 XXX TODO return values as ordered dicts with column or label as key. Good for label feature, good for expanding in UIs, good for internal algorithm. Actually just return labels in the top row. Clean. Cool. Crisp
 
 ### Schema
+
+XXX Figure out how to list useful to-many links in schema that will list entries with backref to current entry.
 
 XXX
 
