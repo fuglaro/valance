@@ -32,21 +32,21 @@ Endpoint: `db/<db-name>/que,ry`
 }
 ```
 ```json
-[["color", "name"],
- [[["red", "John"], ["user", {"id":1}]],
-  [["blue", "Ken"], ["user", {"id":2}]],
-  [["blue", "Adam"], ["user", {"id":3}]],
- ["color", "name"],
- [null, null],
- [0, 0]]]
+{"labels": ["color", "name"],
+ "values": [["red", "John"],
+            ["blue", "Ken"],
+            ["blue", "Adam"]],
+ "rowrefs": [["user", {"id":1}],
+             ["user", {"id":2}],
+             ["user", {"id":3}]],
+ "colrefs": [[null, null],
+             [null, null],
+             [null, null]],
+ "columns": ["color", "name"],
+ "backrefs": [null, null],
+ "ismany": [0, 0]]]
 ```
-# XXX update all examples and document
-Labels
-Results
-Columns (for editing)
-Reverse Relationships
-IsToMany
-# XXX figure out editing reference for ToOne relationships. Via reverse relationship? If, so, need tables listed. Or include keys in return?
+# XXX when is a colref editable?
 ---
 
 ### Limit
