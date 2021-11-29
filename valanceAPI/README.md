@@ -128,9 +128,19 @@ Endpoint: `db/<db-name>/query`
 }
 ```
 ```json
-[["John", "red", ["user", [1]]],
- ["Adam", "blue", ["user", [3]],
- ["Ken", "blue", ["user", [2]]]]
+{
+    "labels": ["name", "color"],
+    "values": [["John", "red"],
+               ["Adam", "blue"],
+               ["Ken", "blue"]],
+    "rowrefs": [{"id":1},
+                {"id":3},
+                {"id":2}],
+    "colrefs": [[["user", "name", {"id":1}], ["user", "color", {"id":1}]],
+                [["user", "name", {"id":3}], ["user", "color", {"id":3}]],
+                [["user", "name", {"id":2}], ["user", "color", {"id":2}]]],
+    "ismany": [0, 0]
+}
 ```
 ---
 
@@ -144,8 +154,16 @@ Endpoint: `db/<db-name>/query`
 }
 ```
 ```json
-[["Ken", ["user", [2]]],
- ["Adam", ["user", [3]]]
+{
+   "labels": ["name"],
+    "values": [["Ken"],
+               ["Adam"]],
+    "rowrefs": [{"id":2},
+                {"id":3}],
+    "colrefs": [[["user", "name", {"id":2}]],
+                [["user", "name", {"id":3}]]],
+    "ismany": [0, 0]
+}
 ```
 ---
 
