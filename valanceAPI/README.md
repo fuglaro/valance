@@ -44,7 +44,7 @@ Endpoint: `db/<db-name>/que,ry`
              [null, null]],
  "columns": ["color", "name"],
  "backrefs": [null, null],
- "ismany": [0, 0]]]
+ "ismany": [0, 0]}
 ```
 # XXX when is a colref editable?
 ---
