@@ -2,7 +2,7 @@
 
 ## Table Query API
 
-Endpoint: `db/<db-name>/query`
+Endpoint: `db/<db-name>/que,ry`
 
 *user*
 | *id* | name | color |
@@ -32,10 +32,21 @@ Endpoint: `db/<db-name>/query`
 }
 ```
 ```json
-[["red", "John", ["user", [1]]],
- ["blue", "Ken", ["user", [2]]],
- ["blue", "Adam", ["user", [3]]]]
+[["color", "name"],
+ [[["red", "John"], ["user", {"id":1}]],
+  [["blue", "Ken"], ["user", {"id":2}]],
+  [["blue", "Adam"], ["user", {"id":3}]],
+ ["color", "name"],
+ [null, null],
+ [0, 0]]]
 ```
+# XXX update all examples and document
+Labels
+Results
+Columns (for editing)
+Reverse Relationships
+IsToMany
+# XXX figure out editing reference for ToOne relationships. Via reverse relationship? If, so, need tables listed. Or include keys in return?
 ---
 
 ### Limit
