@@ -210,9 +210,19 @@ Relationship traversal can be utilised in `columns`, `sort` conditions, and `whe
 }
 ```
 ```json
-[["John", "WIN", "gold", ["user_medal", [1, 1]]],
- ["John", "LAST", "red", ["user_medal", [1, 2]]],
- ["Ken", "WIN", "gold", ["user_medal", [2, 1]]]]
+{
+    "labels": ["user.name", "medal.name", "medal.color],
+    "values": [["John", "WIN", "gold"],
+               ["John", "LAST", "red"],
+               ["Ken", "WIN", "gold"]],
+    "rowrefs": [{"user":1, "medal":1},
+                {"user":1, "medal":2},
+                {"user":2, "medal":1}],
+    "colrefs": [[["user", "name", {"id":1}], ["medal", "name", {"id":1}], ["medal", "color", {"id":1}]],
+                [["user", "name", {"id":1}], ["medal", "name", {"id":2}], ["medal", "color", {"id":2}]],
+                [["user", "name", {"id":2}], ["medal", "name", {"id":1}], ["medal", "color", {"id":1}]]],
+    "ismany": [0, 0, 0]
+}
 ```
 ---
 
